@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="230dp"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_corner_white_bg_red_stroke"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <!-- Top Area -->
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:gravity="center_vertical|center"
+            android:orientation="horizontal">
+
+
+            <!-- Left Button -->
+            <ImageView
+                android:id="@+id/iv_prev_clue"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:rotation="180"
+                android:src="@drawable/triangle"
+                android:visibility="gone" />
+
+
+            <!-- Middle Area -->
+            <com.coupon.go.view.TextViewRegular
+                android:id="@+id/tv_main_clue"
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="1/2" />
+
+
+            <!-- Right Button -->
+
+            <ImageView
+                android:id="@+id/iv_next_clue"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:src="@drawable/triangle" />
+
+
+        </LinearLayout>
+
+
+        <!-- Bottom area -->
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/rl_go"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/go_small" />
+
+            <com.coupon.go.view.TextViewRegular
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/txt_go"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_normal" />
+        </RelativeLayout>
+
+
+        <!--<com.coupon.go.view.TextViewRegular
+            android:id="@+id/tv_clues_detail"
+            style="@style/normal_text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:maxLines="5"
+            android:singleLine="false"
+            />-->
+
+        <android.support.v4.view.ViewPager
+            android:layout_below="@id/ll_top"
+            android:layout_above="@id/rl_go"
+            android:id="@+id/viewpager_clue_dtl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="7dp"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

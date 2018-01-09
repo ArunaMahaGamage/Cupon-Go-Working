@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="artifacts:craftar-augmented-reality-sdk-android-4.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/craftar-augmented-reality-sdk-android-4.0.aar/fef6818884afeb54184e3f8e5d71ad3e/jars/libs/httpcore-4.3.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/craftar-augmented-reality-sdk-android-4.0.aar/fef6818884afeb54184e3f8e5d71ad3e/jars/libs/httpmime-4.3.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/craftar-augmented-reality-sdk-android-4.0.aar/fef6818884afeb54184e3f8e5d71ad3e/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/craftar-augmented-reality-sdk-android-4.0.aar/fef6818884afeb54184e3f8e5d71ad3e/jars/libs/sanselan-0.97-incubator.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/craftar-augmented-reality-sdk-android-4.0.aar/fef6818884afeb54184e3f8e5d71ad3e/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/craftar-augmented-reality-sdk-android-4.0.aar/fef6818884afeb54184e3f8e5d71ad3e/jars/libs/craftarsdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

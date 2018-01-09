@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:minWidth="720dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_white_bg_red_stroke"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <com.coupon.go.view.TextViewRegular
+            android:id="@+id/tv_shop_name"
+            style="@style/normal_text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="Thanks You For Using" />
+
+
+        <ImageView
+            android:id="@+id/iv_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/coupon_w" />
+
+
+        <!-- Bottom Area -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/back_ass" />
+
+            <RelativeLayout
+                android:id="@+id/rl_go"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/iv_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/go_medium" />
+
+                <com.coupon.go.view.TextViewRegular
+                    android:id="@+id/tv_go"
+                    style="@style/normal_text"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/txt_go"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_normal" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:minWidth="400dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_white_bg_red_stroke"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.coupon.go.view.TextViewRegular
+            android:id="@+id/tv_main_clue"
+            style="@style/normal_text"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Didn't Find Anything?" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical|center"
+            android:orientation="horizontal">
+
+            <com.coupon.go.view.TextViewRegular
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:text="Press"
+                android:textSize="@dimen/text_normal" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_go"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/go_small" />
+                <com.coupon.go.view.TextViewRegular
+                    style="@style/normal_text"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/txt_go"
+                    android:textColor="@color/colorWhite"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/text_normal" />
+            </RelativeLayout>
+
+
+            <com.coupon.go.view.TextViewRegular
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:text="To Keep Looking"
+                android:textSize="@dimen/text_normal" />
+
+
+        </LinearLayout>
+
+
+        <com.coupon.go.view.TextViewRegular
+            style="@style/normal_text"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Need Some Help?" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical|center"
+            android:orientation="horizontal">
+
+            <com.coupon.go.view.TextViewRegular
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:text="Press"
+                android:textSize="@dimen/text_normal" />
+
+            <ImageView
+                android:id="@+id/iv_clues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clues" />
+
+            <com.coupon.go.view.TextViewRegular
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="For Available Clues"
+                android:textSize="@dimen/text_normal" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

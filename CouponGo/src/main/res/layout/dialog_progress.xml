@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#00000000"
+    android:minHeight="1000dp"
+    android:minWidth="1000dp">
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!--<com.github.rahatarmanahmed.cpv.CircularProgressView
+            android:id="@+id/giv_progress"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            app:cpv_color="@color/colorRed"
+            app:cpv_animAutostart="true"
+            android:visibility="gone"
+            app:cpv_indeterminate="true" />-->
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/giv_progress"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/loading" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_below="@id/giv_progress"
+            android:id="@+id/ll_progress_txt"
+            android:orientation="horizontal">
+
+
+            <com.coupon.go.view.TextViewRegular
+                android:id="@+id/tv_msg"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="Please Wait"
+                android:textColor="#FFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.coupon.go.view.TextViewRegular
+                android:layout_toRightOf="@+id/tv_msg"
+                android:id="@+id/tv_dot"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:visibility="gone"
+                android:text="....."
+                android:textColor="#FFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

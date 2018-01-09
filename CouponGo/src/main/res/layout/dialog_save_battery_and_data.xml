@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:minWidth="720dp"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_white_bg_red_stroke"
+        android:gravity="center"
+        android:orientation="vertical">
+        <com.coupon.go.view.TextViewRegular
+
+            style="@style/level_header_text"
+            android:layout_marginTop="15dp"
+            android:padding="0dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="false"
+            android:textColor="@color/colorRed"
+            android:text="Want To Save"
+            />
+        <com.coupon.go.view.TextViewRegular
+
+            style="@style/level_header_text"
+            android:layout_marginTop="0dp"
+            android:padding="0dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="false"
+            android:textColor="@color/colorRed"
+            android:text=" Battery And Data?"
+            />
+
+        <com.coupon.go.view.TextViewRegular
+            android:id="@+id/tv_dialog_available_level_1"
+            style="@style/normal_text"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:padding="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="Use GPS instead of your camera!"
+            />
+        <com.coupon.go.view.TextViewRegular
+            android:id="@+id/tv_dialog_available_level_2"
+            style="@style/normal_text"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:padding="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="Click navigation and goto location. Once you arrive, the coupon will automatically be saved in your list."
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- Left Button -->
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/back_ass" />
+
+            <ImageView
+                android:id="@+id/iv_go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/go_small" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

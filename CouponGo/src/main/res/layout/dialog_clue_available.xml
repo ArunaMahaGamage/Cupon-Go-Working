@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blur"
+    android:minWidth="1080dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_white_bg_red_stroke"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.coupon.go.view.TextViewRegular
+            android:id="@+id/tv_main_clue"
+            style="@style/normal_text"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Your Clue Will Be Available In" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.coupon.go.view.TextViewBold
+                android:id="@+id/tv_hour"
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:maxLength="4"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/text_big" />
+
+            <com.coupon.go.view.TextViewBold
+                android:id="@+id/tv_hour_txt"
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:maxLength="1"
+                android:text="h"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/text_big" />
+
+            <com.coupon.go.view.TextViewBold
+                android:id="@+id/tv_minute"
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:maxLength="4"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/text_big" />
+
+            <com.coupon.go.view.TextViewBold
+                android:id="@+id/tv_minute_txt"
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:maxLength="1"
+                android:text="m"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/text_big" />
+
+
+            <com.coupon.go.view.TextViewBold
+                android:id="@+id/tv_second"
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:maxLength="4"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/text_big" />
+
+            <com.coupon.go.view.TextViewBold
+                android:id="@+id/tv_second_txt"
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:maxLength="1"
+                android:text="s"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/text_big" />
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/back_ass" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

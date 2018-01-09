@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!-- Header Area -->
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorRed">
+
+        <!--<com.coupon.go.view.TextViewRegular
+            android:id="@+id/tv_header"
+            style="@style/normal_text"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="CLUES"
+            android:textColor="@color/colorWhite" />-->
+
+        <ImageView
+            android:id="@+id/iv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:src="@drawable/coupon_red" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:src="@drawable/back_white" />
+    </RelativeLayout>
+
+
+    <!-- Clue Area -->
+    <com.coupon.go.view.TextViewRegular
+        android:id="@+id/tv_main_clue"
+        style="@style/normal_text"
+        android:layout_below="@id/rl_header"
+        android:gravity="left"
+        android:maxLines="5"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textColor="@color/colorBlack" />
+
+    <!-- Map Area -->
+    <FrameLayout
+        android:id="@+id/fl_map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_main_clue" />
+
+    <!-- Bottom Area -->
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <com.coupon.go.view.TextViewRegular
+            style="@style/normal_text"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorRed" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp">
+
+            <ImageView
+                android:id="@+id/iv_go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/go_medium"
+                android:padding="5dp" />
+
+            <com.coupon.go.view.TextViewRegular
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/txt_go"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_normal"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/bottom_cam_container"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorRed"
+        android:orientation="vertical"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp">
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_ar_camera"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        android:src="@drawable/cc_camera_round"/>
+
+
+    <!-- Direction Button -->
+    <ImageView
+        android:id="@+id/iv_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_cam_container"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:src="@drawable/black" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_blur"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>
+
+
+
+

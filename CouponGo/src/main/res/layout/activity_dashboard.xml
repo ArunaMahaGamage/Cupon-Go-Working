@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp"
+        android:background="@color/colorRed">
+
+        <com.coupon.go.view.TextViewRegular
+            android:id="@+id/tv_main_clue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorRed"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="NEARBY COUPONS"
+            android:textColor="#FFF"
+            android:textSize="@dimen/text_normal" />
+
+        <com.coupon.go.view.TextViewRegular
+            android:id="@+id/tv_coupons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="SAVED COUPONS"
+            android:textSize="@dimen/text_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp"
+        >
+        <FrameLayout
+            android:id="@+id/realtabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

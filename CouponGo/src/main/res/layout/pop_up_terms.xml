@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorCameraHeader">
+
+    <com.coupon.go.view.TextViewRegular
+        android:id="@+id/tv_txt"
+        style="@style/normal_text"
+        android:singleLine="false"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colordeepAsh"
+        android:textSize="@dimen/text_normal" />
+
+
+</RelativeLayout>

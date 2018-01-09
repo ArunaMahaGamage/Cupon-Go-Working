@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_tutorial_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:visibility="visible" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_fluent_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFF">
+        <ImageView
+            android:id="@+id/iv_fluent_logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/coupon_w" />
+    </LinearLayout>
+
+
+
+    <!--<com.github.rahatarmanahmed.cpv.CircularProgressView
+        android:id="@+id/giv_progress"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        app:cpv_color="@color/colorRed"
+        app:cpv_animAutostart="true"
+        app:cpv_indeterminate="true" />-->
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/giv_progress"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/loading" />
+
+
+    <com.coupon.go.view.TextViewRegular
+        android:id="@+id/btn_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:textSize="18sp"
+        android:background="#50FFFFFF"
+        android:padding="10dp"
+        android:text="SKIP"
+        android:textColor="@color/colorRed" />
+
+
+</RelativeLayout>

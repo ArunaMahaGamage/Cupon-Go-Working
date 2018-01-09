@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+
+        //applicationId 'com.coupon.go'
+//        applicationId 'com.catchoom.craftarsdkexamples'
+        applicationId 'com.cctest.app'
+        minSdkVersion 17
+        targetSdkVersion 22
+        versionName "1.0"
+        versionCode 1
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    dexOptions {
+        incremental false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/MANIFEST.MF'
+        exclude 'META-INF/NOTICE'
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+//    compile 'com.android.support:support-v4:23.4.0'
+    compile fileTree(include: ['*.jar'], dir: '../../libs')
+    compile project(':craftar-augmented-reality-sdk-android-4.0')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.j256.ormlite:ormlite-android:4.48'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.google.android.gms:play-services:6.5.87'
+    compile 'com.github.rahatarmanahmed:circularprogressview:2.5.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.facebook.android:facebook-android-sdk:4.7.0'
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'jp.wasabeef:blurry:2.0.2'
+    compile 'com.nispok:snackbar:2.11.+'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.16'
+
+    compile files('libs/armediarendering.jar')
+    compile files('libs/armediatracking.jar')
+    compile files('libs/opencv library - 2.4.13.1.jar')
+}

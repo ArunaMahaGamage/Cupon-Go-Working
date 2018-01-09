@@ -1,0 +1,11 @@
+<resources>
+
+    <dimen name="text_normal">18sp</dimen>
+    <dimen name="text_x_normal">22sp</dimen>
+    <dimen name="text_big">35sp</dimen>
+    <dimen name="row_clue_coupon_height">150dp</dimen>
+
+
+    <integer name="dialog_dim">20</integer>
+
+</resources>

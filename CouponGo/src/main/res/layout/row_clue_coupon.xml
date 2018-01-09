@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <!-- Top Area -->
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightAsh"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Title Text Area -->
+        <com.coupon.go.view.TextViewRegular
+            android:id="@+id/tv_main_clue"
+            style="@style/nearby_coupon_header_text"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Title of the item" />
+
+        <ImageView
+            android:id="@+id/iv_right_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:src="@drawable/info"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+    <!-- Bottom Area -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_clue_coupon_height"
+        android:layout_below="@id/ll_top">
+
+        <!--<pl.droidsonroids.gif.GifImageView
+            android:id="@+id/giv_progress"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/progress" />-->
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/go_medium"
+                android:padding="5dp"
+                />
+
+            <com.coupon.go.view.TextViewRegular
+                android:id="@+id/tv_go"
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/txt_go"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_normal"
+                />
+        </RelativeLayout>
+
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/giv_progress"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/loading" />
+
+        <!--<com.github.rahatarmanahmed.cpv.CircularProgressView
+            android:id="@+id/giv_progress"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            app:cpv_animAutostart="true"
+            app:cpv_color="@color/colorRed"
+            app:cpv_indeterminate="true" />-->
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

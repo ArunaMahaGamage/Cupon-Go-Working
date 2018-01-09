@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CouponCam</string>
+    <string name="action_settings">Settings</string>
+    <string name="facebook_id">967373976690427</string>
+
+    <string name="american_typewriter">ufonts.com_american-typewriter-light.ttf</string>
+    <string name="american_typewriter_bold">ufonts.com_american-typewriter-bold.ttf</string>
+    <string name="american_typewriter_light">american-typewriter-light.ttf</string>
+    <string name="txt_go">GO</string>
+    <string name="preference_file_key">abc</string>
+</resources>

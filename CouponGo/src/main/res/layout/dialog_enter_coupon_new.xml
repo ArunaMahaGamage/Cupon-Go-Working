@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:minWidth="720dp"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_white_bg_red_stroke"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/iv_header"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/coupon_w"
+            android:visibility="gone"/>
+
+
+        <com.coupon.go.view.TextViewRegular
+
+            style="@style/level_header_text"
+            android:layout_marginTop="15dp"
+            android:padding="0dp"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/colorRed"
+            android:textSize="30dp"
+            android:text="Claim Your Coupon"
+            />
+        <com.coupon.go.view.TextViewRegular
+            android:id="@+id/tv_dialog_available_level_1"
+            style="@style/normal_text"
+            android:layout_marginTop="10dp"
+            android:padding="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="Show this coupon to a staff member at Shop Name to claim this coupon"
+            />
+        <com.coupon.go.view.TextViewRegular
+
+            style="@style/level_header_text"
+            android:layout_marginTop="10dp"
+            android:padding="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/colorRed"
+            android:textSize="25dp"
+            android:text="Coupon Name"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- Left Button -->
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:maxHeight="30dp"
+                android:maxWidth="30dp"
+                android:src="@drawable/exclamation_mark_red" />
+
+
+        </LinearLayout>
+
+        <com.coupon.go.view.TextViewRegular
+
+            style="@style/level_header_text"
+            android:layout_marginTop="10dp"
+            android:padding="0dp"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/colorRed"
+            android:textSize="25dp"
+            android:text="Enter Coupon Code"
+            />
+
+
+        <com.coupon.go.view.TextViewRegular
+            style="@style/level_header_text"
+            android:layout_marginTop="0dp"
+            android:padding="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="false"
+            android:textColor="@color/colorRed"
+            android:textSize="12dp"
+            android:text="Entering This Code Will Void This Coupon For Future Use"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.coupon.go.view.EditTextRegular
+                android:id="@+id/et_coupon_code"
+                style="@style/normal_text"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:textColor="@color/colorRed"
+                android:singleLine="false"
+                android:background="@drawable/rect_trans_bg_ash_stroke"
+                android:hint="Type Coupon Code"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_ok"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:src="@drawable/ok_green" />
+
+        <!-- Bottom Area -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- Left Button -->
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/back_ass" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
