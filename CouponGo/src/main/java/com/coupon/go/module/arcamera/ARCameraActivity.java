@@ -191,19 +191,27 @@ public class ARCameraActivity extends ARMediaLocationTrackerActivity implements 
 
                 locations = new Location[arraylist.size()];
 
-                    System.out.println("param is comparable");
+                    String [] lat = {"6.8802449","6.8802738","6.8803487","6.8802449","6.8802738","6.8803487","6.8802449","6.8802738","6.8803487","6.8803487"};
+                    String[] lon ={"79.8799442","79.8802661","79.8805243","79.8799442","79.8802661","79.8805243","79.8799442","79.8802661","79.8805243","79.8805243"};
 
-                for (int i = 0; i < arraylist.size(); i++) {
+                for (int i = 0; i < 2; i++) {
 
                 Clue temClue = (Clue) arraylist.get(i);
                     Location location = new Location(temClue.coupon_title.toString());//provider name is unecessary
-                    location.setLatitude(Float.parseFloat(temClue.latitude));
-                    location.setLongitude(Float.parseFloat(temClue.longitude));
+                    location.setLatitude(Float.parseFloat("6.8802449"));
+                    location.setLongitude(Float.parseFloat("79.8799442"));
+
+                   /* location.setLatitude(Float.parseFloat(temClue.latitude));
+                    location.setLongitude(Float.parseFloat(temClue.longitude));*/
+
                     location.setAltitude(10.5f);
                     location.setAccuracy(1.0f);
                     addLocationWithName(location.getProvider(), location);
 
                     locations[i] = location;
+
+                    Log.e("lat000000000", String.valueOf(locations[i].getLatitude()));
+                    Log.e("longggg", String.valueOf(locations[i].getLongitude()));
 
                     // setup 3D content/scene here...
                     if (new File(models_folder + File.separator + MODEL_TO_LOAD).exists()) {
