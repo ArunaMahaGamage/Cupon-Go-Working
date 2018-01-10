@@ -1,9 +1,13 @@
 package com.coupon.go.module.maps;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.location.Location;
 import android.os.Bundle;
 
+import com.coupon.go.R;
+import com.coupon.go.module.arcamera.ARCameraActivity;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;
@@ -12,6 +16,9 @@ import com.google.android.gms.location.FusedLocationProviderApi;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
+
+import java.io.Serializable;
+import java.util.ArrayList;
 
 public class FusedLocationService implements LocationListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 
@@ -104,6 +111,17 @@ public class FusedLocationService implements LocationListener, GoogleApiClient.C
                 if (locUpdateListener != null) {
                     locUpdateListener.onLocationUpdated(location, now, gps_time, accuracy, alt, distance);
                 }
+
+
+                SharedPreferences sharedPref = context.getSharedPreferences(
+                        context.getString(R.string.preference_location), Context.MODE_PRIVATE);
+
+                SharedPreferences.Editor editor = sharedPref.edit();
+                editor.putString(context.getString(R.string.saved_getLatitude), String.valueOf(location.getLatitude()));
+                editor.putString(context.getString(R.string.saved_getLongitude), String.valueOf(location.getLongitude()));
+                editor.putString(context.getString(R.string.saved_getBearing), String.valueOf(location.getBearing()));
+                editor.commit();
+
             }
 
 
@@ -144,6 +162,10 @@ public class FusedLocationService implements LocationListener, GoogleApiClient.C
         if (googleApiClient != null) {
             googleApiClient.disconnect();
         }
+    }
+
+    public interface CurrentLocation {
+        public void currentLocation(Location location);
     }
 
 

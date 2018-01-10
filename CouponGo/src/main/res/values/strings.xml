@@ -8,4 +8,9 @@
     <string name="american_typewriter_light">american-typewriter-light.ttf</string>
     <string name="txt_go">GO</string>
     <string name="preference_file_key">abc</string>
+    <string name="preference_location">location</string>
+    <string name="saved_location">saved_location</string>
+    <string name="saved_getLatitude">saved_getLatitude</string>
+    <string name="saved_getLongitude">saved_getLongitude</string>
+    <string name="saved_getBearing">saved_getBearing</string>
 </resources>
