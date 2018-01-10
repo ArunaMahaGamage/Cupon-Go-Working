@@ -191,18 +191,19 @@ public class ARCameraActivity extends ARMediaLocationTrackerActivity implements 
 
                 locations = new Location[arraylist.size()];
 
-                    String [] lat = {"6.8802449","6.8802738","6.8803487","6.8802449","6.8802738","6.8803487","6.8802449","6.8802738","6.8803487","6.8803487"};
-                    String[] lon ={"79.8799442","79.8802661","79.8805243","79.8799442","79.8802661","79.8805243","79.8799442","79.8802661","79.8805243","79.8805243"};
+                    String [] lat = {"6.8802449","6.8802738","6.8803487","6.8802449","6.8802738","6.8803487","6.8802449","6.8802738","6.8803487","6.8803487","6.8802449","6.8802738","6.8803487","6.8802449","6.8802738","6.8803487","6.8802449","6.8802738","6.8803487","6.8803487"};
+                    String[] lon ={"79.8799442","79.8802661","79.8805243","79.8799442","79.8802661","79.8805243","79.8799442","79.8802661","79.8805243","79.8805243","79.8799442","79.8802661","79.8805243","79.8799442","79.8802661","79.8805243","79.8799442","79.8802661","79.8805243","79.8805243"};
 
-                for (int i = 0; i < 2; i++) {
+                for (int i = 0; i < arraylist.size(); i++) {
 
                 Clue temClue = (Clue) arraylist.get(i);
                     Location location = new Location(temClue.coupon_title.toString());//provider name is unecessary
-                    location.setLatitude(Float.parseFloat("6.8802449"));
-                    location.setLongitude(Float.parseFloat("79.8799442"));
 
-                   /* location.setLatitude(Float.parseFloat(temClue.latitude));
-                    location.setLongitude(Float.parseFloat(temClue.longitude));*/
+                    /*location.setLatitude(Float.parseFloat(lat[i]));
+                    location.setLongitude(Float.parseFloat(lon[i]));*/
+
+                    location.setLatitude(Float.parseFloat(temClue.latitude));
+                    location.setLongitude(Float.parseFloat(temClue.longitude));
 
                     location.setAltitude(10.5f);
                     location.setAccuracy(1.0f);
